@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Assignment</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: cadetblue;
+        }
+
+        header>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        section {
+            display: flex;
+        }
+
+        #div1 {
+            background-color: bisque;
+            flex-grow: 1;
+        }
+
+        #div1>a {
+            text-decoration: none;
+            display: flex;
+            padding-top: 50px;
+            color: black;
+            justify-content: center;
+        }
+
+        #div1>a:hover {
+            color: blueviolet;
+        }
+
+        #div2 {
+            flex-grow: 5;
+        }
+
+        #items {
+            display: flex;
+            height: 200px;
+            background-color: #aaa;
+        }
+
+        #items1 {
+            display: flex;
+            height: 200px;
+            background-color: #aaa;
+        }
+
+        .group {
+            border: 1px solid rgb(95, 93, 93);
+            flex-grow: 1;
+            text-align: center;
+            margin: 5px;
+            background-color: #ccc;
+            justify-content: center;
+        }
+
+        .group:hover {
+            background-color: darkseagreen;
+        }
+
+        .group1 {
+            border: 1px solid rgb(95, 93, 93);
+            flex-grow: 1;
+            background-color: #ccc;
+            margin: 5px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .group1:hover {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header Section Start-->
+    <header>
+        <div>
+            <h2>Header</h2>
+        </div>
+    </header>
+    <!--Header Section End-->
+
+    <main>
+        <!--Sidebar Section Start-->
+        <div id="div1">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Map</a>
+        </div>
+        <!--Sidebar Section End-->
+
+        <!--Section Start-->
+        <div id="div2">
+
+            <div id="items">
+                <div class="group"></div>
+                <div class="group"></div>
+                <div class="group"></div>
+            </div>
+            <div id="items1">
+                <div class="group1"></div>
+                <div class="group1"></div>
+                <div class="group1"></div>
+            </div>
+            <div id="items1">
+                <div class="group1"></div>
+                <div class="group1"></div>
+                <div class="group1"></div>
+            </div>
+        </div>
+        <!--Section End-->
+    </main>
+</body>
+
+</html>
