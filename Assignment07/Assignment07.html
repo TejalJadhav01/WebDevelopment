@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flex Assignment03</title>
+        <style>
+            body{
+                margin: 20px;
+                padding: 0px;
+                background-color: rgb(209, 208, 208);
+            }
+            header{
+                display: flex;
+            }
+            header>div{
+                flex: 1;
+                text-align: center;
+                padding:5px;
+               background-color:darkgray;
+                margin: 5px;
+            }
+            section{
+                display: flex;
+                margin: 10px;
+            }
+            section>div{
+                padding: 0px;
+                margin: 0px;
+            }
+            #image{
+                background-color: #aaa;
+                flex-grow: 4;
+            }
+            #blocks{
+                flex-grow: 3;
+            }
+            main{
+                margin: 5px;
+            }
+            main>div{
+                border: 1px solid darkgray;
+                align-items: center;
+                margin: 5px; 
+            }
+            #group{
+                height: 150px;
+                text-align: center;
+                background-color:#aaa;
+                padding-bottom: 0px;
+            }
+            #group1{
+                height: 150px;
+                text-align: center;
+                background-color: #aaa;
+                padding-bottom: 0px;
+            }
+            article{
+                display: flex;
+                flex-grow: 1;
+            }
+            article>div{
+                background-color: #aaa;
+                margin: 5px;
+                text-align: center;
+            }
+            section1{
+                background-color:#aaa;
+                display: flex;
+            }
+            section1>div{
+                margin: 10px;
+                background-color:#aaa;
+            }
+            button{
+                background-color: #ccc;
+                color: white;
+            }
+            contain{
+                display: flex;
+                flex: 1;
+            }
+            contain>div{
+                flex-grow: 1;
+                margin: 5px;
+                background-color:#aaa;
+            }
+            contain1{
+                display: flex;
+                flex-grow: 3;
+                background-color:#aaa; 
+            }
+            #div2{
+                margin-left: 140px;
+                margin-right: 80px;
+            }
+            footer{
+                display: flex;
+                background-color: rgb(135, 154, 154);
+            }
+            footer>div{
+                text-decoration: none;
+            }
+            #footer1>ul{
+                list-style: none;
+                margin-left: 100px;
+            }
+            li>a{
+                margin: 5px;
+                text-decoration: none;
+                color: white;
+            }
+            #footer2{
+                margin-left: 300px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Header Start-->
+        <header>
+            <div>Tacos</div>
+            <div>Beers</div>
+            <div>Wines</div>
+            <div>Deserts</div>
+            <div>Reservation</div>
+        </header>
+        <!--Header End-->
+
+        <!--Section Start-->
+        <section>
+            <div id="image"><img src="../ASSETS/banner.jpg" height="311px"  width="100%" style="margin: 5px;" alt=" It is Image"></div>
+            <div id="blocks">
+                <main>
+                    <div id="group">
+                        <h2>$1.99</h2>
+                        <p>Tacos</p>
+                    </div>
+                    <div id="group1">
+                        <h2>$1.99</h2>
+                        <p>Beer</p>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!--Section End-->
+
+        <!--Article Start-->
+        <article>
+            <div>
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <h3>Beer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <h3>Wine</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <h3>Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </article>
+        <!--Article End-->
+
+        <!--Section1 Start-->
+        <section1>
+            <div><img src="../ASSETS/food1.jpg"  alt="This is Image"></div>
+            <div id="headline">
+                <h3>Headline</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae et, asperiores sequi modi omnis, quas veritatis expedita animi fuga harum atque sit, in voluptatibus repudiandae facere pariatur. Hic, error incidunt.</p>
+                <button>Learn More</button>
+            </div>
+        </section1>
+      <!--Section1 End-->
+
+      <!--Contain Start-->
+        <contain>
+            <div><img src="../ASSETS/food3.jpg" height="200px" width="300px" alt="This is Image"></div>
+            <div><img src="../ASSETS/food2.jpeg"  height="200px" width="300px" alt="This is Image"></div>
+            <div><img src="../ASSETS/food1.jpg" height="200px" width="300px" alt="This is Image"></div>
+        </contain>
+      <!--Contain End-->
+
+      <!--Contain1 Start-->
+        <contain1>
+            <div><img src="../ASSETS/food3.jpg" height="200px" width="300px" alt="This is Image"></div>
+            <div id="div2"><img src="../ASSETS/food2.jpeg"  height="200px" width="300px" alt="This is Image"></div>
+        </contain1>
+        <!--Contain1 End-->
+
+        <!--Footer Start-->
+        <footer>
+            <div id="footer1">
+                <ul>
+                <li><a href="#">Tacos</a></li>
+                <li><a href="#">Beer</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="#">Reservation</a></li>
+            </ul>
+            </div>
+            <div id="footer2"><img src="../ASSETS/image1.jpg" height="70px" width="150px" alt="This Is Image"></div>
+        </footer>
+        <!--Footer End-->
+        
+    </body>
+</html>
