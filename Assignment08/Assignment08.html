@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Assignment 08</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            header{
+                height: 430px;
+                width: 100%;
+                background-color: #aaa;
+            }
+            #text{
+                margin-left: 90px;
+                padding-top: 100px;
+                /* flex-wrap: nowrap; */
+                color: black;
+            }
+            #div1{
+                margin-left: 900px;
+            }
+            #div1>a{
+                padding-top: 20px;
+                color: black;
+                text-decoration: none;
+                margin: 5px;
+            }
+            header>p{
+                /* display: flex; */
+                margin-left: 200px;
+                width: 590px;
+            }
+            button{
+                margin-left: 30%;
+                width: 180px;
+                background-color: #ccc;
+                border: none;
+            }
+            section{
+                display: flex;
+                margin:20px;
+            }
+            section>div{
+                margin-left: 40px;
+                flex-grow: 1;
+            }
+            main{
+                display: flex;
+            }
+            main>div{
+                width: 50px ;
+                margin-left: 40px;
+                flex: 1;
+            }
+            .group{
+                width: 380px;
+            }
+             footer{
+                background-color:lightslategray;
+                display: flex;
+            }
+            footer>div{
+                padding-top: 20px;
+                padding-left: 80px;
+                font-size: 20px;
+                color: white;
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 600px;
+            }
+            nav>a{
+                text-decoration: none;
+                /* font-weight: bold; */
+                font-size: 20px;
+                color: white;
+                margin: 20px;
+               
+            }
+        </style>        
+       
+    </head>
+    <body>
+        <!--Header Start-->
+        <header>
+            <div id="text">
+                <h2>Styles</h2> 
+                <h2>Conference</h2>
+        </div>
+            <div id="div1">
+                <h4>Conference Date and Time</h4>
+                <a href="">home</a>
+                <a href="">about us</a>
+                <a href="">career</a>
+                <a href="">contact us</a>
+            </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, nulla magnam dolor blanditiis dolorum sit provident sed, atque, aperiam accusantium tempore optio accusamus ad commodi cumque at doloremque odio fugit?</p>
+                <button>Register Now</button>
+            </header>
+            <!--Header End-->
+
+            <!--Section Start-->
+            <section>
+                <div>Speakers</div>
+                <div>Schedule</div>
+                <div>Venue</div>
+            </section>
+            <!--Section End-->
+
+            <!--Main Start-->
+            <main>
+                <div><img src="../ASSETS/men.jpg" alt="The Person Image" style="background-color: #aaa;">
+                    <div class="group">
+                    <h3>World class Speakers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore excepturi quibusdam ipsa iusto, aliquid fugit corrupti minima quae. Aliquam rerum doloribus assumenda eius in ad architecto incidunt nemo facere qui.</p>
+            </div>    
+            </div>
+                <div><img src="../ASSETS/men.jpg" alt="The Person Image" style="background-color: #aaa;">
+                    <div class="group">
+                        <h3>Three Inspiring Days</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore excepturi quibusdam ipsa iusto, aliquid fugit corrupti minima quae. Aliquam rerum doloribus assumenda eius in ad architecto incidunt nemo facere qui.</p>
+                </div>
+                </div>
+                <div><img src="../ASSETS/men.jpg" alt="The Person Image" style="background-color: #aaa;">
+                    <div class="group">
+                        <h3>The Venue</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore excepturi quibusdam ipsa iusto, aliquid fugit corrupti minima quae. Aliquam rerum doloribus assumenda eius in ad architecto incidunt nemo facere qui.</p>
+                </div>
+                </div>
+            </main>
+            <!--Main End-->
+
+            <!--Footer Start-->
+            <footer>
+                    <div>Styles Conference</div>                 
+                    <nav>
+                     <a href="#">Home</a>
+                     <a href="#">About Us</a>
+                     <a href="#">Career</a>
+                     <a href="#">Contact Us</a>
+                    </nav>
+            </footer>
+            <!--Footer End-->
+    </body>
+</html>
