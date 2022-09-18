@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Assignment03</title>
+    <style>
+        body {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        header {
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        header>div {
+            padding-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        section {
+            margin: 5px;
+            display: flex;
+            border: 1px solid black;
+        }
+
+        section>div {
+            display: flex;
+            margin: 5px;
+            height: 150px;
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        #div1 {
+            flex-grow: 3;
+        }
+
+        article {
+            margin: 5px;
+            display: flex;
+            border: 1px solid black;
+        }
+
+        #block {
+            border: 1px solid black;
+            margin: 5px;
+            flex: 1;
+        }
+
+        #items>div {
+            border: 1px solid black;
+            margin: 5px;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        #block1 {
+            border: 1px solid black;
+            margin: 5px;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header Start-->
+    <header>
+        <div>Header</div>
+    </header>
+    <!--Header End-->
+
+    <!--Section Start-->
+    <section>
+        <div></div>
+        <div id="div1"></div>
+        <div></div>
+    </section>
+    <!--Section End-->
+
+    <!--Article Start-->
+    <article>
+        <div id="block">
+            <div id="items">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="block1">
+            <div id="items">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <!--Article End-->
+
+</body>
+</html>
