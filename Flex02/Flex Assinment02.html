@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Assignment2</title>
+        <style>
+            body{
+                margin: 5px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+            header{
+                display: flex;
+                border: 1px solid black;
+                height: 50px;
+                justify-content: center;
+            }
+            header>div{
+                text-decoration: none;
+                text-align: center;
+                font-size: 20px;
+                padding-top: 15px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            header>div:hover{
+                color: brown;
+            }
+            section{
+                border: 1px solid black;         
+                display: flex;
+                margin: 5px;
+            }
+            section>div{
+                flex:1;
+            }
+            #product{
+                display: flex;
+                border: 1px solid black;
+                flex-grow: 7;
+            }
+            #block{
+                flex-grow: 5;
+                margin: 5px;
+                border: 1px solid black;
+            }
+            #slidebar{
+                flex-grow: 2;
+            }
+           .group{
+               height: 200px;
+               margin: 10px;
+               flex-grow: 1;
+               border: 1px solid black;
+           }
+           #block1{
+                margin: 5px;
+                border: 1px solid black;
+                flex-grow: 5;
+            }
+            .group1{
+                height: 200px;
+                margin: 10px;
+               flex-grow: 1;
+               border: 1px solid black;
+           }
+           #block2{
+                margin: 5px;
+                border: 1px solid black;
+                flex-grow: 5;
+            }
+            .group2{
+                height: 200px;
+                margin: 10px;
+               flex-grow: 1;
+               border: 1px solid black;
+           }
+           #slidebar>ul{
+               list-style: none;
+           }
+           ul>li{
+               text-decoration: none;
+               text-align: center;
+               margin: 10px;
+               font-weight: bold;
+               padding-top: 10px;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>Header</div>
+        </header>
+
+        <section>
+          <div id="product">
+            <div id="block">
+                    <div class="group"></div>
+                    <div class="group"></div>
+                    <div class="group"></div>
+            </div>
+            <div id="block1">
+                <div class="group1"></div>
+                <div class="group1"></div>
+                <div class="group1"></div>
+            </div>
+            <div id="block2">
+                <div class="group2"></div>
+                <div class="group2"></div>
+                <div class="group2"></div>
+            </div>
+        </div>  
+            <div id="slidebar">
+                <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Career</li>
+                <li>Contact Us</li>
+            </ul>
+            </div>
+        </section>
+    </body>
+</html>
