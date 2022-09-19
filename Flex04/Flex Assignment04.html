@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Assignment04</title>
+    <style>
+        header {
+            margin: 10px;
+            border: 1px solid black;
+            display: flex;
+            text-align: center;
+            height: 50px;
+            justify-content: space-around;
+        }
+
+        header>div {
+            padding-top: 5px;
+            margin: 10px;
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        nav {
+            border: 1px solid black;
+        }
+
+        nav>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        section {
+            display: flex;
+        }
+
+        #div1 {
+            border: 1px solid black;
+            flex-grow: 1;
+        }
+
+        #div1>a {
+            text-decoration: none;
+            display: flex;
+            padding-top: 50px;
+            color: black;
+            justify-content: center;
+        }
+
+        #div2 {
+            flex-grow: 5;
+        }
+
+        #items {
+            display: flex;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        #items1 {
+            display: flex;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .group {
+            border: 1px solid black;
+            flex-grow: 1;
+            text-align: center;
+            margin: 5px;
+            justify-content: center;
+        }
+
+        .group1 {
+            border: 1px solid black;
+            flex-grow: 1;
+            margin: 5px;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Start-->
+    <nav>
+        <div>
+            <h2>Header</h2>
+        </div>
+    </nav>
+    <!--Nav End-->
+
+    <!--Header Start-->
+    <header>
+        <div>link 1</div>
+        <div>link 2</div>
+        <div>link 3</div>
+        <div>link 4</div>
+    </header>
+    <!--Header End-->
+
+    <!--Main Start-->
+    <main>
+        <!--Sidebar Section Start-->
+        <div id="div1">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Map</a>
+        </div>
+        <!--Sidebar Section End-->
+
+        <!--Section Start-->
+        <div id="div2">
+
+            <div id="items">
+                <div class="group"></div>
+                <div class="group"></div>
+                <div class="group"></div>
+            </div>
+            <div id="items1">
+                <div class="group1"></div>
+                <div class="group1"></div>
+                <div class="group1"></div>
+            </div>
+            <div id="items1">
+                <div class="group1"></div>
+                <div class="group1"></div>
+                <div class="group1"></div>
+            </div>
+        </div>
+        <!--Section End-->
+    </main>
+    <!--Main End-->
+</body>
+
+</html>
