@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Webpage Using Bootstrap</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+      
+        <style>
+          body{
+            margin: 0px;
+            padding:0px;
+            background-color: gray;
+          }
+
+            nav{
+                background-color: gainsboro;
+            }
+            li>.nav-link{
+                margin-left: 30px;
+            }
+            .nav-link:hover{
+                background-color: gainsboro;
+                color: white;
+            }
+            section{
+              margin: 20px;
+              display: flex;
+            }
+            .card{
+              background-color: gainsboro;
+              margin: 15px;
+            }
+            article{
+              margin: 20px;
+            }
+            #text{
+              background-color: gainsboro;
+              border: 1px solid black;
+              margin: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black;">Contact Us</a>
+              </li>
+          </ul>
+        </nav>
+        <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../ASSETS/banner.jpg" class="d-block w-100" alt="Image1" height="500px" width="100%" style="background-color: rgb(208, 153, 153);">
+            </div>
+            <div class="carousel-item">
+              <img src="../ASSETS/download.jpg" class="d-block w-100" alt="Image2"  height="500px" width="100%" style="background-color: rgb(151, 127, 127);">
+            </div>
+            <div class="carousel-item">
+              <img src="../ASSETS/image.jpg" class="d-block w-100" alt="Image3" height="500px" width="100%" style="background-color: rgb(115, 88, 88);">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </main>
+
+        <section>
+          <div class="card" style="width: 18rem;">
+            <img src="../ASSETS/men1.png" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="../ASSETS/men1.png" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="../ASSETS/men1.png" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="../ASSETS/men1.png" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </section>
+
+        <article>
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../ASSETS/food1.jpg" class="img-fluid rounded-start" alt="Image" style="background-color: gray;" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis omnis, corrupti qui delectus pariatur tempore eum vitae ratione quos quae reprehenderit saepe culpa quibusdam distinctio autem libero cupiditate quia?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati numquam totam inventore voluptas amet! Atque accusamus laudantium tenetur est a, numquam placeat perferendis assumenda ipsum alias, corporis aliquam obcaecati!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt iste quae harum nulla dolorem ex aspernatur temporibus cum! Beatae, fugit. Praesentium quae iusto ad enim eligendi possimus consequatur. Tenetur!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis velit veritatis est, impedit veniam ex repudiandae ducimus officia a corporis in aperiam optio consectetur natus assumenda nulla. Velit, harum eveniet!
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis omnis, corrupti qui delectus pariatur tempore eum vitae ratione quos quae reprehenderit saepe culpa quibusdam distinctio autem libero cupiditate quia?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati numquam totam inventore voluptas amet! Atque accusamus laudantium tenetur est a, numquam placeat perferendis assumenda ipsum alias, corporis aliquam obcaecati!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt iste quae harum nulla dolorem ex aspernatur temporibus cum! Beatae, fugit. Praesentium quae iusto ad enim eligendi possimus consequatur. Tenetur!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis velit veritatis est, impedit veniam ex repudiandae ducimus officia a corporis in aperiam optio consectetur natus assumenda nulla. Velit, harum eveniet!
+                  </p>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../ASSETS/food1.jpg" class="img-fluid rounded-start" alt="Image" style="background-color: gray;" >
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div id="text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta reprehenderit quam rerum nemo. Deleniti ex officiis a saepe ipsam esse animi repellendus beatae dignissimos qui temporibus error, harum eveniet!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, ducimus. Rem perferendis molestias voluptatibus tenetur iusto corrupti dignissimos repudiandae voluptas? Illo ad beatae sunt ipsum ipsam! Quos quaerat delectus repudiandae.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque unde quae voluptatibus, deserunt beatae reprehenderit praesentium labore alias, maxime officiis quasi tempora? Officia, dolorem deserunt laboriosam deleniti ipsam odit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, est. Nulla sint cum aspernatur! Voluptas animi nisi accusamus magnam velit ipsa, illo soluta assumenda nemo nihil culpa nesciunt obcaecati quam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis accusamus vero earum quisquam enim quibusdam! Exercitationem nihil neque error recusandae eum, cum, culpa labore unde architecto, adipisci distinctio ipsa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eaque, veritatis consectetur repellat sit sed officiis! Explicabo ipsam vel, repudiandae deserunt suscipit eveniet culpa consectetur repellendus magni consequatur, facere asperiores.
+          </p>
+        </div>
+    </body>
+</html>
